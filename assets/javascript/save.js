@@ -20,7 +20,7 @@ $(document).ready(function() {
 	function storeArticle() {
 
         $("#resultMessageDiv").hide();
-        alert("Article saved!");
+        alert("Item saved!");
         //gets id of the clicked article (which is set to the unique article identifier from Firebase)
         var articleTitle = $(this).attr("id");
         var articleSource = $(this).attr("data");
@@ -258,7 +258,7 @@ $(document).ready(function() {
 
 	});//ends retrieveNews click
 
-    
+
 
     //adds these event listeners to the document so they will work for dynamically generated elements
     $(document).on("click", ".saveBtn", storeArticle);
