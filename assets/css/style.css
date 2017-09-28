@@ -392,7 +392,7 @@ footer {
 
     #menu1 {
         width: 95px;
-        /*margin-left: -12px;*/
+       /* margin-left: 12px;*/
         /*padding-left: 2px;*/
         text-align: center;
         font-size:10px;
@@ -492,5 +492,11 @@ footer {
     #aboutBody {
         font-size:10px;
     }
+
+#searchTerm {
+    margin: 0 0 0 -6px;
+    margin-right:1px;
+
+}
 
 }
