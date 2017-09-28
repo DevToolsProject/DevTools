@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
     var provider;
@@ -10,15 +11,15 @@ $(document).ready(function(){
             provider = new firebase.auth.GoogleAuthProvider();
             //displays Google sign-in popup
             firebase.auth().signInWithPopup(provider).then(function(result) {
-                $("#saveMessageDiv").hide();
+                $("#resultMessageDiv").hide();
                 //captures all user data captured by Google
                 user = result.user;
             //captures and displays any errors   
             }).catch(function(error) {
                   var errorCode = error.code;
                   var errorMessage = error.message;
-                  $("#saveMessage").html("Login Failed. " + errorMessage);
-                  $("#saveMessageDiv").show();    
+                  $("#resultMessage").html("Login Failed. " + errorMessage);
+                  $("#resultMessageDiv").show();    
                   console.log(errorCode);
                   console.log(errorMessage);
                });
@@ -39,11 +40,9 @@ $(document).ready(function(){
                 //stores the user's id 
                 uid = user.uid;
                 //changes to a sign out button and updates status when user is signed in
-                // document.getElementById('GoogleSignInStatus').textContent = 'Signed in';
                 document.getElementById('GoogleSignIn').textContent = 'Sign out';
             }   else {
-                    //changes to a sign in button and updates status when user is signed out 
-                    // document.getElementById('GoogleSignInStatus').textContent = 'Signed out';
+                    //changes to a sign in button and updates status when user is signed out
                     document.getElementById('GoogleSignIn').textContent = 'Google Sign-In';
                 }
         
