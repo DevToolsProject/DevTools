@@ -307,6 +307,20 @@ footer {
         width: 53%;
         margin-left: 15px;
     }*/
+
+    #aboutBox {
+        width:85%;
+        margin: 0 auto;
+    }
+
+    #aboutHeading {
+        font-size:24px;
+    }
+
+    #aboutBody {
+        font-size:14px;
+    }
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -340,6 +354,19 @@ footer {
 
     #aboutBtn {
         font-size:12.5px;
+    }
+
+    #aboutBox {
+        width:85%;
+        margin: 0 auto;
+    }
+
+    #aboutHeading {
+        font-size:24px;
+    }
+
+    #aboutBody {
+        font-size:14px;
     }
 
 

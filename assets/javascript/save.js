@@ -20,6 +20,7 @@ $(document).ready(function() {
 	function storeArticle() {
 
         $("#resultMessageDiv").hide();
+        alert("Article saved!");
         //gets id of the clicked article (which is set to the unique article identifier from Firebase)
         var articleTitle = $(this).attr("id");
         var articleSource = $(this).attr("data");
