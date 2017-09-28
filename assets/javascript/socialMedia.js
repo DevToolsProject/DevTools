@@ -52,7 +52,9 @@ $(document).ready(function() {
                         saveButton.text("Save");
                         saveButton.attr("id", videoTitle);
                         saveButton.attr("data", "youtube");
+                        if (firebase.auth().currentUser) {
                         newDiv.append(saveButton);
+                    }
                         newDiv.append("<button id='yTLink'><a href='"+ vidIdFullLink+"'" + "target='_blank'>View</a></button>");
                         
                         $(".results").append(newDiv);

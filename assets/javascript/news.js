@@ -58,11 +58,14 @@ $(document).ready(function() {
                         apiDescP.attr("id", "articleDes");
                         $(resultDiv).append(apiDescP);
 
+                        if (firebase.auth().currentUser) {
+
                         button = $("<button>Save</button>");
                         button.addClass("saveBtn");
                         button.attr("id", apiTitle);
                         button.attr("data", "reddit");
                         $(resultDiv).append(button);
+                    }
 
                         apiURL = 'http://reddit.com' + apiData[i].data.url;
                         apiURLBtn = $("<button><a href='" + apiURL + "'target='none'>View</a></button><br/>");
@@ -82,6 +85,11 @@ $(document).ready(function() {
             $("#resultMessage").html("You must enter a search term.");
             $("#resultMessageDiv").show();
         }
+
+        // //if there's no current user
+        // if (!firebase.auth().currentUser) {
+        //     $(".saveBtn").hide();
+        // } //ends if stmt 
 
     });//ends submit click
 

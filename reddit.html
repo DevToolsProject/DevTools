@@ -67,9 +67,9 @@
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle center-block" type="button" id="menu1" data-toggle="dropdown">Saved   <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li id="allSavedNews" role="presentation"><a role="menuitem" href="#">All</a></li>
-                        <li id="readNews" role="presentation"><a role="menuitem" href="#">Read</a></li>
-                        <li id="unreadNews" role="presentation"><a role="menuitem" href="#">Unread</a></li>
+                        <li id="allSavedNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">All</a></li>
+                        <li id="readNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">Read</a></li>
+                        <li id="unreadNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">Unread</a></li>
                     </ul>
                 </div>
                 </div>
@@ -101,6 +101,24 @@
         </div>
         <!-- End Main Conatiner Tag -->
         <div id="footer">&copy;2017 DevTools Team</div>
+
+        <script>
+
+
+    $(".saveitem").click(function() {
+
+
+        //if there's no current user
+        if (!firebase.auth().currentUser) {
+            
+            alert("Please sign in.");
+            event.preventDefault();
+            // window.location.reload();
+        } //ends if stmt 
+
+    });
+
+        </script>
 
         <script type="text/javascript" src="assets/javascript/auth.js"></script>
         <script type="text/javascript" src="assets/javascript/news.js"></script>
