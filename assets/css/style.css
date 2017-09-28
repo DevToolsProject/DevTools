@@ -481,4 +481,16 @@ footer {
     margin:0 auto !important;
  }
 
+#userLocation {
+    max-width: 100px;
+}
+
+ #aboutHeading {
+        font-size:20px;
+    }
+
+    #aboutBody {
+        font-size:10px;
+    }
+
 }
