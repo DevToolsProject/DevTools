@@ -38,7 +38,7 @@
                 <div class="dropdown">
                     <button class="newsBtn btn btn-default dropdown-toggle center-block" type="button" id="menu1" data-toggle="dropdown"> News <span class="caret" id="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" href="reddit.html">Reddit</a></li>
+                        <li role="presentation"><a class="redditmenu" role="menuitem" href="reddit.html">Reddit</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                     </ul>
@@ -49,7 +49,7 @@
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle center-block" type="button" id="menu1" data-toggle="dropdown">Network   <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" href="github.html">GitHub</a></li>
+                        <li role="presentation"><a class = "githubmenu" role="menuitem" href="github.html">GitHub</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                     </ul>
@@ -60,7 +60,7 @@
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle center-block" type="button" id="menu1" data-toggle="dropdown">Social Media   <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" href="youtube.html">YouTube</a></li>
+                        <li role="presentation"><a class = "youtubemenu" role="menuitem" href="youtube.html">YouTube</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                         <li role="presentation"><a role="menuitem" href="#">Placeholder</a></li>
                     </ul>
@@ -69,11 +69,11 @@
             <div class="col-sm-3 col-xs-3">
                 <!-- Column for the Saved Button -->
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle center-block" type="button" id="menu1" data-toggle="dropdown">Saved   <span class="caret"></span></button>
+                    <button class="btn btn-default dropdown-toggle center-block savedButton" type="button" id="menu1" data-toggle="dropdown">Saved   <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li id="allSavedNews" role="presentation"><a role="menuitem" href="#">All</a></li>
-                        <li id="readNews" role="presentation"><a role="menuitem" href="#">Read</a></li>
-                        <li id="unreadNews" role="presentation"><a role="menuitem" href="#">Unread</a></li>
+                        <li id="allSavedNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">All</a></li>
+                        <li id="readNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">Read</a></li>
+                        <li id="unreadNews" role="presentation"><a class = "saveitem" role="menuitem" href="#">Unread</a></li>
                     </ul>
                 </div>
             </div>
@@ -100,7 +100,6 @@
                 <p id="resultMessage"></p>
             </div>
         </div>
-
         <div id="mapDiv" class="row">
             <!-- Map Row -->
             <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-xs-12">
@@ -116,9 +115,63 @@
         <!-- Map Row End -->
     </div>
     <!-- End Main Conatiner Tag -->
-    
     <footer>&copy;2017 DevTools Team</footer>
+    <script>
+    // $(".newsBtn").click(function() {
+    //     //if there's no current user
+    //     if (!firebase.auth().currentUser) {
+    //         event.preventDefault();
+    //         this.blur();
+    //         window.focus();
+    //         alert("Please sign in.");
+    //     } //ends if stmt 
 
+    // });
+
+    $(".redditmenu").click(function() {
+
+        //if there's no current user
+        if (!firebase.auth().currentUser) {
+            event.preventDefault();
+            alert("Please sign in.");
+        } //ends if stmt 
+
+    });
+
+    $(".githubmenu").click(function() {
+
+        //if there's no current user
+        if (!firebase.auth().currentUser) {
+            event.preventDefault();
+            alert("Please sign in.");
+        } //ends if stmt 
+
+    });
+
+    $(".youtubemenu").click(function() {
+
+        //if there's no current user
+        if (!firebase.auth().currentUser) {
+            event.preventDefault();
+            alert("Please sign in.");
+        } //ends if stmt 
+
+    });
+
+    $(".saveitem").click(function() {
+
+
+        //if there's no current user
+        if (!firebase.auth().currentUser) {
+            event.preventDefault();
+            alert("Please sign in.");
+            window.location.reload();
+        } //ends if stmt 
+
+    });
+
+
+    </script>
     <script type="text/javascript" src="assets/javascript/auth.js"></script>
     <script type="text/javascript" src="assets/javascript/news.js"></script>
     <script type="text/javascript" src="assets/javascript/socialMedia.js"></script>
@@ -128,7 +181,6 @@
     <script type="text/javascript" src="assets/javascript/logo.js"></script>
     <script type="text/javascript" src="assets/javascript/save.js"></script>
     <script type="text/javascript" src="assets/javascript/mapmarker.js"></script>
-
 </body>
 
 </html>

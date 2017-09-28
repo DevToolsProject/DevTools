@@ -258,6 +258,8 @@ $(document).ready(function() {
 
 	});//ends retrieveNews click
 
+    
+
     //adds these event listeners to the document so they will work for dynamically generated elements
     $(document).on("click", ".saveBtn", storeArticle);
     $(document).on("click", ".readArticle", readStatus);
