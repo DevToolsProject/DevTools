@@ -442,3 +442,43 @@ footer {
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 400px) {
+
+#aboutBtn {
+        margin-left:27%;
+        margin-bottom: 10px;
+        float:left;
+
+    }
+
+    #GoogleSignIn {
+    width: 160px;
+    margin-left: 27%;
+    font-size: 12.5px;
+    float: left;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding: 5.5px 20px;
+    float:left;
+}
+
+#alt-logo img {
+    max-width: 370px;
+   
+}
+
+#menu1 {
+    width: 72px;
+    margin-left: -5px;
+    padding-left: 1px;
+    text-align: center;
+    font-size: 9px;
+}
+ #map {
+    height:300px !important;
+    width:90% !important;
+    margin:0 auto !important;
+ }
+
+}
