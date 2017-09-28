@@ -335,7 +335,15 @@ footer {
     #GoogleSignIn {
         width: 140px;
         margin-left: 10px;
+        font-size:12.5px;
     }
+
+    #aboutBtn {
+        font-size:12.5px;
+    }
+
+
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -344,7 +352,7 @@ footer {
 
     #alt-logo img {
         max-width: 420px;
-        margin-left: -8px;
+        /*margin-left: -8px;*/
     }
 
     #locationForm {
@@ -357,9 +365,10 @@ footer {
 
     #menu1 {
         width: 95px;
-        margin-left: -12px;
-        padding-left: 2px;
+        /*margin-left: -12px;*/
+        /*padding-left: 2px;*/
         text-align: center;
+        font-size:10px;
     }
 
     .caret {
@@ -393,10 +402,13 @@ footer {
 
     #AboutBtn {
         margin-left: 5px;
+
     }
 
     #map {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        height:200px;
+        width:200px;
     }
 
     .form-inline {
