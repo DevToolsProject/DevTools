@@ -123,7 +123,31 @@ a {
 /*submits searchTerm from input box*/
 #submit {
     float: left;
-    width: 11.5%;
+
+    /*padding-top: 50px; */
+}
+
+#footer {
+	height:100px;
+	width:auto;
+	text-align:center;
+	color:white;
+	vertical-align: middle;
+line-height: 90px;  
+}
+
+#menu1 {
+    background-color: #FF8000;
+    border-color: orangered;
+    border-width: 5px;
+    /*font-family: 'Palanquin Dark', sans-serif;*/
+    /*font-family: 'Concert One', cursive;*/
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+
+    /*width: 11.5%;
+*/
 }
 
 #searchTerm {
@@ -283,6 +307,20 @@ footer {
         width: 53%;
         margin-left: 15px;
     }*/
+
+    #aboutBox {
+        width:85%;
+        margin: 0 auto;
+    }
+
+    #aboutHeading {
+        font-size:24px;
+    }
+
+    #aboutBody {
+        font-size:14px;
+    }
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -311,7 +349,28 @@ footer {
     #GoogleSignIn {
         width: 140px;
         margin-left: 10px;
+        font-size:12.5px;
     }
+
+    #aboutBtn {
+        font-size:12.5px;
+    }
+
+    #aboutBox {
+        width:85%;
+        margin: 0 auto;
+    }
+
+    #aboutHeading {
+        font-size:24px;
+    }
+
+    #aboutBody {
+        font-size:14px;
+    }
+
+
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -320,7 +379,7 @@ footer {
 
     #alt-logo img {
         max-width: 420px;
-        margin-left: -8px;
+        /*margin-left: -8px;*/
     }
 
     #locationForm {
@@ -333,9 +392,10 @@ footer {
 
     #menu1 {
         width: 95px;
-        margin-left: -12px;
-        padding-left: 2px;
+       /* margin-left: 12px;*/
+        /*padding-left: 2px;*/
         text-align: center;
+        font-size:10px;
     }
 
     .caret {
@@ -369,13 +429,100 @@ footer {
 
     #AboutBtn {
         margin-left: 5px;
+
     }
 
     #map {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+        height:200px;
+        width:200px;
     }
 
     .form-inline {
         margin-bottom: 20px;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+#aboutBtn {
+        margin-left:33%;
+        margin-bottom: 10px;
+        float:left;
+
+    }
+
+    #GoogleSignIn {
+    width: 160px;
+    margin-left: 33%;
+    font-size: 12.5px;
+    float: left;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding: 5.5px 20px;
+    float:left;
+}
+
+#alt-logo img {
+    max-width: 370px;
+   
+}
+
+#menu1 {
+    width: 72px;
+    /*margin-left: -5px;*/
+    padding-left: 1px;
+    text-align: center;
+    font-size: 9px;
+}
+ #map {
+    height:300px !important;
+    width:90% !important;
+    margin:0 auto !important;
+ }
+
+#userLocation {
+    max-width: 100px;
+}
+
+ #aboutHeading {
+        font-size:20px;
+    }
+
+    #aboutBody {
+        font-size:10px;
+    }
+
+#searchTerm {
+    margin: 0 0 0 -6px;
+    margin-right:1px;
+
+}
+
+}
+
+@media screen and (max-width: 400px) { 
+
+#menu1 {
+
+     margin-left: -5px;
+
+}
+
+#alt-logo img {
+    max-width: 325px;
+}
+
+#aboutBtn {
+
+    margin-left:25%;
+
+}
+
+#GoogleSignIn {
+    margin-left:25%;
+}
+
+
+
 }

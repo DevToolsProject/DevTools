@@ -40,7 +40,9 @@ $("#submit").on("click", function() {
                     var saveButton = $("<button class='saveBtn button'>Save</button>");
                     saveButton.attr("id", response.items[i].name);
                     saveButton.attr("data", "git");
+                    if (firebase.auth().currentUser) {
                     resultsDiv.append(saveButton);
+                }
                     resultsDiv.append(gitURL);    
                              
                     //append results to resultsDiv
