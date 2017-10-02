@@ -40,7 +40,7 @@ Plans to test on Safari upcoming.
 
 ### Screen Compatibility Tests
 
-When loaded properly (on a device other than a phone, as the button layout has been modified slightly for mobile), the homepage should look like this:
+When loaded properly (on a device other than a phone, as the button layout has been modified slightly for mobile), the homepage should look like this (note: the margins may appear slightly uneven due to photo cropping):
 
 ![Homepage](/assets/images/devtools.JPG)
 
