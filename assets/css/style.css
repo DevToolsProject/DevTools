@@ -443,10 +443,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
 #aboutBtn {
-        margin-left:27%;
+        margin-left:33%;
         margin-bottom: 10px;
         float:left;
 
@@ -454,7 +454,7 @@ footer {
 
     #GoogleSignIn {
     width: 160px;
-    margin-left: 27%;
+    margin-left: 33%;
     font-size: 12.5px;
     float: left;
     padding-right: 10%;
@@ -470,7 +470,7 @@ footer {
 
 #menu1 {
     width: 72px;
-    margin-left: -5px;
+   /* margin-left: -5px;*/
     padding-left: 1px;
     text-align: center;
     font-size: 9px;
@@ -498,5 +498,31 @@ footer {
     margin-right:1px;
 
 }
+
+}
+
+@media screen and (max-width: 400px) { 
+
+#menu1 {
+
+     margin-left: -12px;
+
+}
+
+#alt-logo img {
+    max-width: 325px;
+}
+
+#aboutBtn {
+
+    margin-left:25%;
+
+}
+
+#GoogleSignIn {
+    margin-left:25%;
+}
+
+
 
 }
