@@ -41,15 +41,19 @@ Plans to test on Safari upcoming.
 ### Screen Compatibility Tests
 
 When loaded properly (on a device other than a phone, as the button layout has been modified slightly for mobile), the homepage should look like this:
-![Homepage](/assets/images/homepage1.JPG)
+
+![Homepage](/assets/images/devtools.JPG)
 
 The "about" page should look like this:
-![About Page](/assets/images/aboutpage.JPG)
+
+![About Page](/assets/images/aboutpage1.JPG)
 
 A typical search page should look like this (after one has entered a search term):
-![Search Page](/assets/images/searchwithresults.JPG)
+
+![Search Page](/assets/images/searchwithresults3.JPG)
 
 The "saved" pages are formatted like this:
+
 ![Saved Page](/assets/images/savedpage.JPG)
 
 The site is best viewed on a large desktop (1680x1050 and up), but looks good on essentially any modern device's screen resolution. This includes both a 10" and 12" Netbook, a 13" and 15" notebook, 19"-24" desktops, Kindle Fire, Asus Nexus 7, iPad and iPad Pro, Samsung Galaxy tab, Microsoft Surface Pro, iPhone 3 and up (including iPhone 6-7 plus), Galaxy S2 and up, LG G 3-5, and 480p, 720p and 1080p televisions. 
